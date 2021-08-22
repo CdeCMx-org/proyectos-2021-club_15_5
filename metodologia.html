@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Metodología</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text" href="index.html">Desi</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#header">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#introduction">Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#desarrollo">Desarrollo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Proyecto</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="metodologia.html">Metodología</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="resultados.html">Resultados</a></li>
+                            <!--
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#integrantes">Integrantes</a>
+                    </li>
+                </ul>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Metodología</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-fluid mt-5 mb-3" width='100%' src="images/convertidor_final.png" alt="alternative">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-3 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h2 class="mb-4">Diseñar el aerogenerador en SolidWorks</h2>
+                    <p>Es importante diseñar y simular la superficie alar propuesta para conocer el comportamiento del flujo de aire a través de las aspas antes de realizar las pruebas experimentales. </p>
+                    <img class="img-fluid mb-5" src="images/diseño_solid.png" alt="alternative">
+                   
+                    <h2 class="mb-4">Regular el voltaje</h2>
+                    <p>Las salidas del motor se conectan al pin 1 del regulador de voltaje, el cual corresponde al voltaje de entrada producido por el movimiento de las aspas del rotor además, el pin 3, que es el voltaje regulado a 5 V, se conecta al puerto USB. 
+Es importante medir el voltaje del aerogenerador y el voltaje regulado antes de conectar el celular.  </p>
+                    <img class="img-fluid mb-5" src="images/regulador.jpg" alt="alternative">
+                   
+                   <h2 class="mb-4">Medir los RPM del aerogenerador s</h2>
+                    <p>Se debe conectar el encoder al módulo ESP32 para medir las revoluciones por minuto (RPM), es decir, la velocidad angular del rotor. 
+El encoder se puede alimentar con el pin de 3.3 V del ESP32.
+ </p>
+                    <img class="img-fluid mb-5" src="images/medidors.jpeg" alt="alternative">
+                    <p>Después se debe realizar un programa en Arduino para leer el encoder y calcular las RPM de acuerdo al número de interrupciones. 
+                    </p>
+                    
+                    <img class="img-fluid mb-5" src="images/interfaz_web.png" alt="alternative">
+                    <img class="img-fluid mb-5" src="images/rpm.jpg" alt="alternative">
+                   
+                    <h2 class="mb-4">Calcular los parámetros de rendimiento</h2>
+                    <p>Con las revoluciones por minuto (RPM) es posible calcular la velocidad del viento: </p>
+                    <img class="img-fluid mb-5" src="images/formula_1.png" alt="alternative">
+                    <p>En consecuencia, es posible obtener la potencia del aire de entrada:  </p>
+                    <img class="img-fluid mb-5" src="images/formula_3.png" alt="alternative">
+                    <p>Donde p es la densidad de aire (1.23 kg/m3), A es el área de la sección transversal y v es la velocidad del viento.</p>
+
+                    <p>Dividiendo la potencia eléctrica y la potencia del aire de entrada, es posible estimar el coeficiente de potencia (Cp) del aerogenerador, que para nuestro prototipo corresponde un valor de 0.4</p>
+
+                    <p>Finalmente, para conocer la potencia captada por el rotor, se debe multiplicar la potencia del aire de entrada por el Cp. </p>
+                   <p>Con estos valores es posible estimar la eficiencia del aerogenerador, que para nuestro prototipo es del 40 %.
+                    </p>
+                    
+                    <div class="text-box mb-5">
+                        <h3>Nota:</h3>
+                        <p> Según el teorema de Betz, la energía máxima que podrá captarse del viento para que el rendimiento sea máximo es del 59%</p>
+                    </div> <!-- end of text-box -->
+                     <p>Estas fórmulas se agregan al código del encoder, de la siguiente forma: </p>
+                    <img class="img-fluid mb-5" src="images/prog_formulas.png" alt="alternative">
+                    
+                   <h2 class="mb-4"> Crear interfaz web para acceder a los parámetros desde el celular</h2>
+                    <p>El NodeMCU ESP32 es un microcontrolador con módulos integrados de Wifi y Bluetooth. 
+                    El transmisor WiFi y la antena incorporada en el microcontrolador permite la conexión a Internet. Gracias a esto, es posible crear un servidor que aloja una interfaz web para controlar el microcontrolador ESP32 de forma remota, y de esta forma, observar los parámetros de rendimiento en tiempo real.
+                    Para ello es necesario usar la librería Wifi.h, inicializar el servidor, ingresar el ssid y la contraseña de nuestra red además de diseñar la página web en HTML. 
+                    </p>
+                 
+                    <a class="btn-solid-reg mb-5" href="index.html">Home</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+     <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+    	
+    	
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
